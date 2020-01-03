@@ -102,7 +102,7 @@ class MerchantController extends AbstractController
      * @param LoggerInterface $logger
      * @return Response
      */
-    public function call(Request $request, LoggerInterface $logger): Response
+    public function callback(Request $request, LoggerInterface $logger): Response
     {
         $logger->log(LogLevel::INFO, json_encode($request));
 
